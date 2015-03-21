@@ -1,0 +1,11 @@
+{
+    "name": "sandbox",
+    "version": "0.0.0-alpha.0",
+    "description": "Chaos in code.",
+    "private": true,
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/loljoho/sandbox.git"
+    }
+}
