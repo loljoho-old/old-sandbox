@@ -45,6 +45,24 @@
 │   │   ├── angular-material/
 │   │   ├── angular-route/
 │   │   └── font-awesome/
+│   ├── fonts/                  -->
+│   ├── images/                 -->
+│   ├── scripts/                -->
+│   │   ├── core/
+│   │   │   ├── 
+│   │   │   ├── 
+│   │   │   └── 
+│   │   ├── view/
+│   │   │   ├── 
+│   │   │   ├── 
+│   │   │   └── 
+│   │   ├── 
+│   │   ├── 
+│   │   └── 
+│   ├── styles/                 -->
+│   │   ├── components/         --> preprocessor `.scss` files 
+│   │   └── 
+│   ├── app.js
 │   └── 
 ├── node_modules/               --> `npm install` dependencies
 │   ├── 

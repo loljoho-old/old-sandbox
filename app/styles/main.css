@@ -1,0 +1,26 @@
+/**
+ * md-toolbar 
+ */
+
+  md-toolbar.md-short {
+      height: 36px;
+      min-height: 36px;
+      max-height: 36px;
+  }
+
+  md-toolbar.md-medium-short {
+      height: 40px;
+      min-height: 40px;
+      max-height: 40px;
+  }
+
+  md-toolbar.md-medium-short,
+  md-toolbar.md-short {
+      font-size: 1.0em;
+  }
+
+  main .md-toolbar-tools.md-toolbar-tools-bottom {
+      flex-flow: column;
+  }
+
+}

@@ -1,0 +1,25 @@
+md-toolbar {
+  
+  // md-toolbar.md-short
+  &.md-short {
+      height: 36px;
+      min-height: 36px;
+      max-height: 36px;
+  }
+  // md-toolbar.md-medium-short
+  &.md-medium-short {
+      height: 40px;
+      min-height: 40px;
+      max-height: 40px;
+  }
+  &.md-short, &.md-medium-short {
+      font-size: 1.0em;
+  }
+}
+
+main {  
+   .md-toolbar-tools.md-toolbar-tools-bottom {
+      -webkit-flex-flow: column;
+      flex-flow: column;
+  }
+}

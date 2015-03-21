@@ -3,6 +3,12 @@
 node_modules/
 bower_components/
 
+# Development #
+###############
+*codepen*
+*plnkr*
+*jsfiddle*
+
 # Design #
 ##########
 *.psd
@@ -21,6 +27,7 @@ bower_components/
 
 # Logs and Databases #
 ######################
+doc/
 logs/
 *.log
 *.sql
