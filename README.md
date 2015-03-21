@@ -12,7 +12,52 @@
 
 ## History
 
-> Note: 
+**New sections must only be created when one of the following occurs:**
 
-### `v0.1.0` (20-Mar-2015)
+ * Incremented `MINOR` or `MAJOR` version number:
+      * `v0.4.3 -> v0.5.0`
+      * `v1.9.3 -> v2.0.0`
+ * Significant change in pre-release modifier:
+      * `v1.0.0-beta -> v1.0.0-rc.1`
+      * `v1.0.0-rc.2 -> v1.0.0-rc.3`
+ * Major `git-branch` modifications on `origin` remote:
+      * `git branch -d old-branch`
+      * `git checkout -B new-branch`
+      * `git merge develop wip-feature`
+ 
+ only do so upon: `minor` or `major` number is incremented; a new pre-release modifier is used when the `major` or `minor` numbers are incremented
 
+### `v0.1.x` (20-Mar-2015)
+
+**Summary**
+
+
+**Versioning**
+ - New branch `develop` from `master`.
+
+**Files**
+```
+├── app/
+│   ├── bower_components/       --> `bower install` dependencies
+│   │   ├── angular/
+│   │   ├── angular-animate/
+│   │   ├── angular-aria/
+│   │   ├── angular-material/
+│   │   ├── angular-route/
+│   │   └── font-awesome/
+│   └── 
+├── node_modules/               --> `npm install` dependencies
+│   ├── 
+│   └── bower/
+├── .bowerrc                    --> relocate `bower_components/`
+├── .gitignore                  --> standard gitignore settings
+├── README.md                   --> updated readme markdown file
+├── bower.json                  --> bower manifest
+├── package.json                --> npm manifest
+└── 
+```
+
+**Dependencies**
+```
+$ npm install bower --save-dev
+```
