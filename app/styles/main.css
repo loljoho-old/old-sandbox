@@ -19,7 +19,12 @@
       font-size: 1.0em;
   }
 
-  main .md-toolbar-tools.md-toolbar-tools-bottom {
+  main .md-toolbar-tools {
+      flex-flow: column-reverse;
+      -webkit-flex-flow: column-reverse;
+  }
+  main .md-toolbar-tools-bottom {
+      -webkit-flex-flow: column;
       flex-flow: column;
   }
 

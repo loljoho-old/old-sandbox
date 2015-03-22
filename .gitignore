@@ -8,6 +8,8 @@ bower_components/
 *codepen*
 *plnkr*
 *jsfiddle*
+.old/
+*.old.*
 
 # Design #
 ##########

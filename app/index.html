@@ -9,11 +9,12 @@
 
   <link rel="stylesheet" href="./bower_components/angular-material/angular-material.min.css"/>
   <link rel="stylesheet" href="./bower_components/font-awesome/css/font-awesome.min.css"/>
+  <link rel="stylesheet" href="./styles/main.css" />
 
 <body layout="column">
 
   <header layout="row">
-    <md-toolbar class="md-accent">
+    <md-toolbar class="md-toolbar-tall md-accent">
       <div class="md-toolbar-tools">
         <span>Sandbox</span>
         <span flex></span>
@@ -23,8 +24,11 @@
 
   <main layout="row" layout="center start" flex>
 
+
+
+    <!-- Left Column -->
     <section layout="column" hide-sm flex>
-      <md-toolbar class="md-toolbar-tall md-accent md-whiteframe-z7">
+      <md-toolbar class="md-toolbar-tall md-accent">
         <div class="md-toolbar-tools">
           <span flex></span>
         </div>
@@ -34,6 +38,9 @@
       </md-toolbar>
     </section>
 
+
+
+    <!-- Centre Column -->
     <section layout="column" flex="66" flex-sm="100">
       <md-content layout="column" class="md-whiteframe-z4 md-padding" flex>
         <md-list>
@@ -53,17 +60,19 @@
       </md-content>
     </section>
 
-    <section layout="column" hide-sm flex>
-      <md-toolbar class="md-toolbar-tall md-accent md-whiteframe-z7">
-        <div class="md-toolbar-tools">
+
+
+    <!-- Right Column -->
+    <section layout="column" flex>
+      <md-toolbar class="md-toolbar-tall md-accent">
+        <div class="md-toolbar-tools" layout="column">
           <span flex></span>
         </div>
-        <div class="md-toolbar-tools md-toolbar-tools-bottom" layout="row" layout-fill layout-wrap>
-          <span flex="100" flex-order="1"></span>
-          <span flex></span>
+        <div class="md-toolbar-tools md-toolbar-tools-bottom" layout="column">
+          <span flex="50"></span>
           <span flex>
             <md-button class="md-fab" aria-label="HEY!">
-              <md-icon style="height:24px; width:24px;"></md-icon>
+              <md-icon></md-icon>
             </md-button>
           </span>
           <span flex></span>
@@ -84,7 +93,13 @@
   <script src="./bower_components/angular/angular.min.js"></script>
   <script src="./bower_components/angular-animate/angular-animate.min.js"></script>
   <script src="./bower_components/angular-aria/angular-aria.min.js"></script>
-  <script src="./bower_components/angular-aria/angular-route.min.js"></script>
-  <script type="text/javascript" src="./bower_components/angular-material/angular-material.min.js"></script>
+  <script src="./bower_components/angular-route/angular-route.min.js"></script>
+  <script src="./bower_components/angular-material/angular-material.min.js"></script>
+
+  <script src="./scripts/app.module.js"></script>
+  <script src="./scripts/core/core.module.js"></script>
+  <script src="./scripts/core/core.config.js"></script>
+  <script src="./scripts/view/view.module.js"></script>
+  <script src="./scripts/view/view.ctrl.js"></script>
 </body>
 </html>

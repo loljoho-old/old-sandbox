@@ -3,7 +3,7 @@
 
   // shared modules
     'app.core'
-  , 'app.layout'
+  , 'app.view'
 
   // feature modules
 

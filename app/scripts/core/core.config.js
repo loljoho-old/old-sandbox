@@ -1,7 +1,8 @@
 (function() {
   angular
     .module('app.core')
-    .config(mdThemeConfig);
+    //.config(mdThemeConfig)
+    .config(mdIconConfig);
 
   mdThemeConfig.$inject = ['$mdThemingProvider'];
   /**
@@ -18,7 +19,7 @@
       .primaryPalette('indigo')
 
       // shades 400, 300, 800, A100
-      .accentPalette('pink')
+      .accentPalette('purple')
 
       // shades 500, 300, 800, A100
       .warnPalette('red')
@@ -27,6 +28,19 @@
       .backgroundPalette('grey');
 
   }
+
+  //mdIconConfig.$inject = ['$mdIconProvider'];
+  /**
+   * Configure Icon Set
+   * @param   $mdIconProvider
+   *
+  function mdIconConfig($mdIconProvider) {
+  */
+      /**
+       * Default Icon Set
+       *
+      $mdIconProvider.defaultIconSet('.bower_components/material-design-icons/')
+  }*/
 
 
 })();
