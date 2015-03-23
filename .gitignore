@@ -1,20 +1,33 @@
+#####################
+# Sartorial Gitignore
+#####################
+#   Jonathan Ho
+#   v1.0.0-rc.1
+#   22-Mar-2015
+#####################
+
+# Development #
+###############
+*.dev.*
+*.old.*
+doc/
+.old/
+
+
 # Dependencies #
 ################
 node_modules/
 bower_components/
 
-# Development #
-###############
-*codepen*
-*plnkr*
-*jsfiddle*
-.old/
-*.old.*
-
 # Design #
 ##########
 *.psd
 *.ai
+*.inx
+*.dia
+*.sla
+*.pub
+
 
 # Packages #
 ############
@@ -29,7 +42,6 @@ bower_components/
 
 # Logs and Databases #
 ######################
-doc/
 logs/
 *.log
 *.sql
@@ -47,4 +59,3 @@ tmp
 ehthumbs.db
 Thumbs.db
 .idea
-app/jspm_packages
