@@ -1,8 +1,8 @@
 (function() {
   angular
     .module('app.core')
-    //.config(mdThemeConfig)
-    .config(mdIconConfig);
+    .config(mdThemeConfig);
+    //.config(mdIconConfig);
 
   mdThemeConfig.$inject = ['$mdThemingProvider'];
   /**
@@ -19,7 +19,7 @@
       .primaryPalette('indigo')
 
       // shades 400, 300, 800, A100
-      .accentPalette('purple')
+      .accentPalette('deep-orange')
 
       // shades 500, 300, 800, A100
       .warnPalette('red')

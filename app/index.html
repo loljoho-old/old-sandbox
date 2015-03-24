@@ -14,9 +14,16 @@
 <body layout="column">
 
   <header layout="row">
-    <md-toolbar class="md-toolbar-tall md-accent">
+    <md-toolbar class="md-toolbar-tall">
       <div class="md-toolbar-tools">
-        <span>Sandbox</span>
+        <span>
+          <md-button ng-click="vm.toggleNav()">
+            <i class="fa fa-lg fa-bars"></i>
+          </md-button>
+        </span>
+        <span flex>
+          <h2> Sandbox</h2>
+        </span>
         <span flex></span>
       </div>
     </md-toolbar>
@@ -24,13 +31,20 @@
 
   <main layout="row" layout="center start" flex>
 
+    <!-- Sidenav -->
+    <md-sidenav md-component-id="left">
+      <md-content>
+        <h1>Sidenav</h1>
+      </md-content>
+    </md-sidenav>
+
 
 
     <!-- Left Column -->
-    <section layout="column" hide-sm flex>
-      <md-toolbar class="md-toolbar-tall md-accent">
+    <section layout="column" hide-sm flex="20">
+      <md-toolbar class="md-toolbar-tall">
         <div class="md-toolbar-tools">
-          <span flex></span>
+          
         </div>
         <div class="md-toolbar-tools md-toolbar-tools-bottom">
           <span flex></span>
@@ -64,14 +78,14 @@
 
     <!-- Right Column -->
     <section layout="column" flex>
-      <md-toolbar class="md-toolbar-tall md-accent">
+      <md-toolbar class="md-toolbar-tall">
         <div class="md-toolbar-tools" layout="column">
           <span flex></span>
         </div>
         <div class="md-toolbar-tools md-toolbar-tools-bottom" layout="column">
           <span flex="50"></span>
           <span flex>
-            <md-button class="md-fab" aria-label="HEY!">
+            <md-button class="md-fab md-accent md-hue-2" aria-label="Menu" ng-click="vm.showMenu()">
               <md-icon></md-icon>
             </md-button>
           </span>
@@ -101,5 +115,6 @@
   <script src="./scripts/core/core.config.js"></script>
   <script src="./scripts/view/view.module.js"></script>
   <script src="./scripts/view/view.ctrl.js"></script>
+  <script src="./scripts/view/menu.ctrl.js"></script>
 </body>
 </html>
